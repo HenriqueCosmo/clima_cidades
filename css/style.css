@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+#caixaFormulario{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+}
+
+.caixaTexto::placeholder{
+    padding-left: 10px;
+}
+
+.caixaTexto{
+    border-radius: 20px;
+    margin-right: 5px;
+    border: none;
+    width: 160px;
+    height: 30px;
+}
+
+.auxiliar{
+    display: flex;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url(../images/sunset_mobile_640.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+        
+    }
+    
+    section{
+        background-color: rgba(176, 172, 149, 0.751);
+        width: 250px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 20vh;
+        border-radius: 20px;
+    
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    body{
+        background-image: url(../images/sunset-desktop_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        
+    
+    }
+    
+    section{
+        background-color: rgba(176, 172, 149, 0.751);
+        width: 250px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20vh;
+    
+    }
+
+}
+
+
+
