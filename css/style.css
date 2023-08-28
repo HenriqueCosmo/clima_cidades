@@ -1,61 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 
 
+.caixa-media {
+    margin-top: 30px;
+}
+
+.caixa-menor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:20px;
+    flex-wrap: wrap;
+}
 
 #caixaFormulario{
     display: flex;
     flex-direction: row;
-    margin: auto;
+    justify-content: space-around;
+}
+
+.cidade::placeholder{
+    margin-left: 10px;
     
 }
 
-.caixaTexto::placeholder{
-    padding-left: 10px;
-}
-
-.caixaTexto{
+.cidade{
     border-radius: 20px;
     margin-right: 5px;
     border: none;
     width: 160px;
     height: 30px;
-}
-
-.auxiliar{
-    display: flex;
-    margin-top: 40px;
+    text-indent: 10px;
+    outline: none;
 }
 
 
+.textDetail{
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.temp {
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.descricao {
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+    font-size: 14px;
+}
+
+.umidade {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 20px;
+}
 
 
+#envioNome{
+    border-radius: 60%;
+    border: none;
+    padding: 2px;
+    width: 30px;
+   
+}
 
+#envioNome:hover{
+    background-color: #e2ceabc0;
+}
 
+.material-symbols-outlined{
+    font-size: 20px;
+
+}
 
 @media screen and (max-width: 600px) {
     body{
-        background-image: url(../images/sunset_mobile_640.jpg);
+        background-image: url(https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY5MzE4NTE5OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600);
         background-repeat: no-repeat;
         background-size: auto;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
         
     }
     
-    section{
-        background-color: rgba(176, 172, 149, 0.751);
-        width: 250px;
-        height: 300px;
+    .caixa-maior{
+        background-color: #b0ac95c0;
+        width: 200px;
+        height: 250px;
         display: flex;
         flex-direction: column;
         margin: auto;
         margin-top: 20vh;
         border-radius: 20px;
-    
+        padding: 25px;
+        
     }
 
 }
@@ -66,21 +120,29 @@
 
 @media screen and (min-width: 600px) {
     body{
-        background-image: url(../images/sunset-desktop_1280.jpg);
+        background-image: url(https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY5MzE4NTE5OQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600);
         background-repeat: no-repeat;
         background-size: 100vw;
+        background-size: auto;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
     
     }
     
-    section{
+    .caixa-maior{
         background-color: rgba(176, 172, 149, 0.751);
         width: 250px;
-        height: 300px;
+        height: 250px;
         display: flex;
         justify-content: center;
         margin: auto;
+        border-radius: 20px;
         margin-top: 20vh;
+        padding: 25px;
     
     }
 

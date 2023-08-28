@@ -11,19 +11,26 @@
     
 </head>
 <body>
-    <section class="mainCard">
-            <div class="auxiliar">
-                <form id="caixaFormulario">
-                    <input type="text" placeholder="Digite o local" class="caixaTexto">
-                    <button type="submit">
-                        <span class="material-symbols-outlined">
-                        search
-                        </span></button>
-                </form>
-                <div class="detalhes">
-                
-                </div>
+    <section class="caixa-maior">
+        <div class="caixamedia">
+            <form id="caixaFormulario">
+                <input type="text" placeholder="Digite o local" class="cidade">
+                <button id="envioNome" type="submit">
+                <span class="material-symbols-outlined">
+                    search
+                </span></button>
+            </form>
+            <div class="caixa-media">
+                <h2 class="textDetail">Tempo em São Paulo</h2>
+                <p class="temp">28°C</p>
             </div>
+            <div class="caixa-menor">
+                <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="descricao">Nuvens Dispersas</p>
+                <p class="umidade">Umidade: 70%</p>
+            </div>
+            
+        </div>
     </section>
 
     <script src="./js/main.js"></script>
