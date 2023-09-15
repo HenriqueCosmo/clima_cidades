@@ -17,6 +17,8 @@ function colocarDadosNaTela(dados){
     console.log(dados)
     document.querySelector(".textDetail").innerHTML = `Tempo em ${dados.name}`;
     document.querySelector(".temp").innerHTML = `${Math.floor(dados.main.temp)}°C`
+    document.querySelector(".minima").innerHTML = `Minima: ${Math.floor(dados.main.temp_min)}°C`
+    document.querySelector(".maxima").innerHTML = `Máxima: ${Math.floor(dados.main.temp_max)}°C`
     document.querySelector(".descricao").innerHTML = dados.weather[0].description
     document.querySelector(".umidade").innerHTML = `Umidade:  ${dados.main.humidity}%`
     document.querySelector(".icone").src = ` https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
